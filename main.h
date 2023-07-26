@@ -30,6 +30,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 char *_getenv(const char *name);
 char *build(char *token, char *value);
 int path_cmd(char **cmd);
+int _strcmp(char *s1, char *s2);
+int _isalpha(int c);
 
 /**
  * struct bulltin - contain bultin to handle and function to excute
@@ -37,7 +39,7 @@ int path_cmd(char **cmd);
  * @fun:fun to excute when bultin true
  */
 
-typedef struct  bulltin
+typedef struct bulltin
 {
 	char *command;
 	int (*fun)(char **line, int er);
