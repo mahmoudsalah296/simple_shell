@@ -1,6 +1,6 @@
 #ifndef _MAIN_H
 #define _MAIN_H
-
+#define BUFSIZE 1024
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -37,7 +37,9 @@ char *_strcat(char *dest, char *src);
 char *_strchr(char *s, char c);
 char *_strdup(char *str);
 int _strncmp(const char *s1, const char *s2, size_t n);
-
+char *_itoa(unsigned int n);
+void _prerror(char **argv, int c, char **cmd);
+char **parse_cmd(char *input);
 /**
  * struct bulltin - contain bultin to handle and function to excute
  * @command:pointer to char
