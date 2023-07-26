@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+ * _getenv - get environment variable
+ * @name: name of the environment
+ * Return: value of the name
+ */
 char *_getenv(const char *name)
 {
 	int i = 0;
