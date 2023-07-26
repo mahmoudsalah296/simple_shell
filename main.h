@@ -15,4 +15,7 @@ extern char **environ;
 char **splitstr(char *str, char delim);
 void _notatty(void);
 char *_strtok(char *str, const char *delim);
+void exit_built(char **cm, char *input, char **argv, int c);
+int change_dir(char **cm, __attribute__((unused)) int er);
+int pri_env(__attribute__((unused)) char **cm, __attribute__((unused)) int er);
 #endif
