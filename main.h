@@ -32,6 +32,11 @@ char *build(char *token, char *value);
 int path_cmd(char **cmd);
 int _strcmp(char *s1, char *s2);
 int _isalpha(int c);
+char *_strcpy(char *dest, char *src);
+char *_strcat(char *dest, char *src);
+char *_strchr(char *s, char c);
+char *_strdup(char *str);
+int _strncmp(const char *s1, const char *s2, size_t n);
 
 /**
  * struct bulltin - contain bultin to handle and function to excute
