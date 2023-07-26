@@ -9,11 +9,10 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 #include <errno.h>
+#include <signal.h>
 #include <fcntl.h>
 extern char **environ;
 
-char **splitstr(char *str, char delim);
-void _notatty(void);
 char *_strtok(char *str, const char *delim);
 void exit_built(char **cm, char *input, char **argv, int c);
 int change_dir(char **cm, __attribute__((unused)) int er);
@@ -44,7 +43,14 @@ void print_number_in(int n);
 void print_number(unsigned int n);
 void print_error(char *input, int counter, char **argv);
 void prompt(void);
-
+void array_rev(char *arr, int len);
+int intlen(int num);
+void hashtag_handle(char *buff);
+char *_getline();
+int handle_builtin(char **cm, int er);
+int check_cmd(char **cmd, char *input, int c, char **argv);
+void signal_to_handel(int sig);
+int check_builtin(char **cmd);
 /**
  * struct bulltin - contain bultin to handle and function to excute
  * @command:pointer to char

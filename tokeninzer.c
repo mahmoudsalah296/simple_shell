@@ -101,13 +101,13 @@ void _prerror(char **argv, int c, char **cmd)
 {
 	char *er = _itoa(c);
 
-	printf("%c", argv[0]);
+	printf("%s", argv[0]);
 	printf(": ");
-	printf("%c", er);
+	printf("%s", er);
 	printf(": ");
-	printf("%c", cmd[0]);
+	printf("%s", cmd[0]);
 	printf(": Illegal number: ");
-	printf("%c", cmd[1]);
+	printf("%s", cmd[1]);
 	printf("\n");
 	free(er);
 }

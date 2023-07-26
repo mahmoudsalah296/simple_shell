@@ -27,7 +27,7 @@ void exit_built(char **cm, char *input, char **argv, int c)
 		}
 		else
 		{
-			statue = _atoi(cm[1]);
+			statue = atoi(cm[1]);
 			free(input);
 			free(cm);
 			exit(statue);
