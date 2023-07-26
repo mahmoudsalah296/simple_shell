@@ -40,6 +40,8 @@ int _strncmp(const char *s1, const char *s2, size_t n);
 char *_itoa(unsigned int n);
 void _prerror(char **argv, int c, char **cmd);
 char **parse_cmd(char *input);
+void print_number_in(int n);
+void print_number(unsigned int n);
 /**
  * struct bulltin - contain bultin to handle and function to excute
  * @command:pointer to char
