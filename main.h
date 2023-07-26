@@ -42,6 +42,9 @@ void _prerror(char **argv, int c, char **cmd);
 char **parse_cmd(char *input);
 void print_number_in(int n);
 void print_number(unsigned int n);
+void print_error(char *input, int counter, char **argv);
+void prompt(void);
+
 /**
  * struct bulltin - contain bultin to handle and function to excute
  * @command:pointer to char
