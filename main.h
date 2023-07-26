@@ -22,6 +22,14 @@ void _puts(char *str);
 int _strlen(char *s);
 char *_strncpy(char *dest, char *src, int n);
 int _putchar(char c);
+char *_memcpy(char *dest, char *src, unsigned int n);
+void *fill_an_array(void *a, int el, unsigned int len);
+void *_calloc(unsigned int size);
+void free_all(char **cmd, char *line);
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+char *_getenv(const char *name);
+char *build(char *token, char *value);
+int path_cmd(char **cmd);
 
 /**
  * struct bulltin - contain bultin to handle and function to excute
