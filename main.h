@@ -22,4 +22,16 @@ void _puts(char *str);
 int _strlen(char *s);
 char *_strncpy(char *dest, char *src, int n);
 int _putchar(char c);
+
+/**
+ * struct bulltin - contain bultin to handle and function to excute
+ * @command:pointer to char
+ * @fun:fun to excute when bultin true
+ */
+
+typedef struct  bulltin
+{
+	char *command;
+	int (*fun)(char **line, int er);
+} bul_t;
 #endif
