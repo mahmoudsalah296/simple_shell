@@ -14,4 +14,5 @@ extern char **environ;
 
 char **splitstr(char *str, char delim);
 void _notatty(void);
+char *_strtok(char *str, const char *delim);
 #endif
