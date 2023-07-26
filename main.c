@@ -3,7 +3,6 @@
  * main - entry point
  * @argc: arguments count
  * @argv: araay of arguments
- * @envp: environment variables
  * Return: 0 on success
  */
 int main(__attribute__((unused)) int argc, char **argv)
