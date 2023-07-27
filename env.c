@@ -9,15 +9,15 @@ char *_getenv(char *env_var)
 {
 	int i = 0;
 	int j = 0;
-	int status = 1;
+	int status;
 
 	while (environ[i])
 	{
-		while (environ[i][j] != '=')
+		status = 1;
+		for (j = 0; environ[i][j] != '='; j++)
 		{
 			if (environ[i][j] != env_var[j])
 				status = 0;
-			j++;
 		}
 		if (status == 1)
 			break;

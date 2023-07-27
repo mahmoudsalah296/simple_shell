@@ -18,7 +18,7 @@ int main(void)
 			printf("$ ");
 
 		buffer_size = getline(&buffer, &read_size, stdin);
-		if (_strcmp("exit\n", buffer || buffer_size == -1) == 0)
+		if (buffer_size == -1 || _strcmp("exit\n", buffer) == 0)
 		{
 			free(buffer);
 			break;
