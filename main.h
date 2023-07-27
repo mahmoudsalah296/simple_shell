@@ -13,4 +13,10 @@ int empty_line(char *line);
 void print_env(void);
 char *_getenv(char *env_var);
 int _execute(char **args);
+void *_calloc(unsigned int member, unsigned int size);
+int _strlen(char *s);
+char *_strcat(char *dest, char *src);
+char **_split(char *str, char *separator);
+char *_strcpy(char *dest, char *src);
+
 #endif
