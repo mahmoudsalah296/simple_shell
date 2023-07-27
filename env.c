@@ -27,7 +27,7 @@ char *_getenv(char *env_var)
 }
 
 /**
- * _env - prints environment variables
+ * print_env - prints environment variables
  */
 void print_env(void)
 {
