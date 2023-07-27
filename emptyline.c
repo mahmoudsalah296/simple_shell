@@ -3,7 +3,7 @@
 /**
  * empty_line - checks if there is an empty line
  * @line: line to be checked
- * Return: 0 or 1 (int)
+ * Return: 0 if there is no empty line or 1 if there is one
  */
 
 int empty_line(char *line)
