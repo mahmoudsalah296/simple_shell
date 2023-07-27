@@ -18,5 +18,6 @@ int _strlen(char *s);
 char *_strcat(char *dest, char *src);
 char **_split(char *str, char *separator);
 char *_strcpy(char *dest, char *src);
+char *search_path(char *cmd);
 
 #endif
