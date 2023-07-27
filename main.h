@@ -12,4 +12,5 @@ extern char **environ;
 int empty_line(char *line);
 void print_env(void);
 char *_getenv(char *env_var);
+int _execute(char **args);
 #endif
